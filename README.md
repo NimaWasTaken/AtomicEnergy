@@ -1,4 +1,4 @@
-# Atomic Energy Programming Class Homework Repository
+# Introduction
 
 - Welcome to the Atomic Energy Programming Class Homework Repository.
 
