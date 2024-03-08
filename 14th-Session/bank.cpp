@@ -38,6 +38,7 @@ vector<int> withdraw(vector<int> accounts, vector<int> balances, int id, int amo
 		}
 	}
 	cout << "Invalid Account. ";
+	return balances;
 }
 
 void balance(vector<int> accounts, vector<int> balances, int id) {
