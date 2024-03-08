@@ -195,7 +195,6 @@ int calcDays(int year_A, int month_A, int day_A, int year_B, int month_B, int da
 			day_A += day_B;
 		}
 	}
-
 	return days - 1;
 }
 
