@@ -50,16 +50,6 @@ void balance(vector<int> accounts, vector<int> balances, int id) {
 	cout << "Invalid Account. ";
 }
 
-void show(vector<int> accounts, vector<int> balances) {
-	for (int i = 0; i < accounts.size(); i++) {
-		cout << accounts[i] << " ";
-	}
-	cout << endl;
-	for (int i = 0; i < balances.size(); i++) {
-		cout << balances[i] << " ";
-	}
-}
-
 void init() {
 	vector<int> accounts;
 	vector<int> balances;
