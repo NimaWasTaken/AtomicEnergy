@@ -4,7 +4,7 @@
 
 using namespace std;
 
-bool check(vector<int> accounts, vector<int> balances, int id) {
+bool check(vector<int> accounts, int id) {
 	for (int i = 0; i < accounts.size(); i++) {
 		if (accounts[i] == id) {
 			return true;
