@@ -82,7 +82,7 @@ void init() {
 		}
 		else if (cmd == "balance") {
 			cin >> id;
-			balance(accounts, balances, id);
+			balance(accounts, id);
 			cout << endl;
 		}
 	}
