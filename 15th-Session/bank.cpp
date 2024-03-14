@@ -75,10 +75,7 @@ void init() {
 				cout << endl;
 			}
 			else {
-				User user;
-				user.id = id;
-				user.balance = amount;
-				information.push_back(user);
+				information.push_back({id,amount});
 				cout << "OK. ";
 				cout << endl;
 			}
