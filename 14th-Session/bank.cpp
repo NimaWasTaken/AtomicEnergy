@@ -64,7 +64,7 @@ void init() {
 		if (cmd == "deposit") {
 			cin >> id;
 			cin >> amount;
-			if (check(accounts, balances, id)) {
+			if (check(accounts, id)) {
 				balances = deposit(accounts, balances, id, amount);
 				cout << endl;
 			}
@@ -83,7 +83,7 @@ void init() {
 		}
 		else if (cmd == "balance") {
 			cin >> id;
-			balance(accounts, id);
+			balance(accounts, balances, id);
 			cout << endl;
 		}
 	}
