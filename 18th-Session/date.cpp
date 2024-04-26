@@ -76,6 +76,10 @@ public:
     bool isEqual(Date date) {
         return (this->date == date.date);
     }
+
+    bool isBirthday(Date date) {
+        return (day == date.day) && (month = date.month);
+    }
 };
 
 class Human {
@@ -91,7 +95,6 @@ public:
 
     void printInfo() {
         cout << "{ " << "Name: " << name << " | Birthdate: " << birthdate.returnDate() << " }\n";
-
     }
 
     string returnName() {
@@ -100,7 +103,7 @@ public:
     }
 
     bool isBirthday(Date date) {
-        return birthdate.isEqual(date);
+        return birthdate.isBirthday(date);
     }
 };
 
@@ -145,9 +148,9 @@ public:
 };
 
 int main() {
-    Human human_1("Nima", 2024, 4, 29);
-    Human human_2("Hashem", 2024, 5, 6);
-    Human human_3("Mahmoud", 2024, 5, 14);
+    Human human_1("Nima", 2002, 4, 29);
+    Human human_2("Hashem", 1984, 5, 6);
+    Human human_3("Mahmoud", 1998, 5, 14);
 
     System system("taryak", 2024, 4, 26);
     system.addPerson(human_1);
